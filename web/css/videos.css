@@ -1,0 +1,440 @@
+/* =========================================================
+   PÁGINA DE VIDEOS
+   CÓDIGO DE ÉTICA DE LA INVESTIGACIÓN CIENTÍFICA
+   ========================================================= */
+
+.videos-page {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+
+    padding: 70px 5% 90px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 5% 5%,
+            rgba(37, 99, 235, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 95% 90%,
+            rgba(14, 165, 233, 0.09),
+            transparent 30%
+        ),
+        #f8fafc;
+}
+
+.videos-container {
+    width: 100%;
+    max-width: 1350px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+   ========================================================= */
+
+.videos-header {
+    max-width: 850px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.videos-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 9px 19px;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 50px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 11px;
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+.videos-header h1 {
+    margin: 22px 0 0;
+
+    color: #0f172a;
+
+    font-size: clamp(2.6rem, 5vw, 4.2rem);
+
+    font-weight: 850;
+
+    line-height: 1.05;
+
+    letter-spacing: -2.5px;
+}
+
+.videos-header h1 span {
+    display: block;
+
+    margin-top: 8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #0284c7
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.videos-header p {
+    max-width: 730px;
+
+    margin: 23px auto 0;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GRID DE VIDEOS
+   ========================================================= */
+
+.videos-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   TARJETA
+   ========================================================= */
+
+.video-card {
+    overflow: hidden;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 25px 55px rgba(15, 23, 42, 0.13);
+}
+
+
+/* =========================================================
+   CONTENEDOR DEL VIDEO
+   ========================================================= */
+
+.video-frame {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #0f172a;
+}
+
+
+/* =========================================================
+   IFRAME YOUTUBE
+   ========================================================= */
+
+.video-frame iframe {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   INFORMACIÓN
+   ========================================================= */
+
+.video-info {
+    padding: 27px 28px 30px;
+}
+
+.video-category {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 11px;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.3px;
+}
+
+.video-info h2 {
+    margin: 13px 0 10px;
+
+    color: #0f172a;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+.video-info p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   ICONO DE VIDEO
+   ========================================================= */
+
+.video-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 13px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   BOTÓN VOLVER
+   ========================================================= */
+
+.videos-back {
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.videos-back a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 13px 21px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.videos-back a:hover {
+    transform: translateY(-3px);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 13px 28px rgba(37, 99, 235, 0.28);
+}
+
+
+/* =========================================================
+   ANIMACIONES
+   ========================================================= */
+
+.videos-header {
+    animation: videoFadeDown 0.6s ease both;
+}
+
+.video-card {
+    animation: videoFadeUp 0.6s ease both;
+}
+
+.video-card:nth-child(2) {
+    animation-delay: 0.10s;
+}
+
+.video-card:nth-child(3) {
+    animation-delay: 0.20s;
+}
+
+.video-card:nth-child(4) {
+    animation-delay: 0.30s;
+}
+
+@keyframes videoFadeDown {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes videoFadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .videos-page {
+        padding: 60px 4% 80px;
+    }
+
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .videos-page {
+        padding: 45px 18px 65px;
+    }
+
+    .videos-header {
+        margin-bottom: 38px;
+    }
+
+    .videos-header h1 {
+        font-size: 2.35rem;
+
+        letter-spacing: -1.5px;
+    }
+
+    .videos-header p {
+        font-size: 14px;
+    }
+
+    .videos-grid {
+        gap: 20px;
+    }
+
+    .video-card {
+        border-radius: 19px;
+    }
+
+    .video-info {
+        padding: 22px;
+    }
+
+    .video-info h2 {
+        font-size: 19px;
+    }
+
+    .video-info p {
+        font-size: 13px;
+    }
+}
